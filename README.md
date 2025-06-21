@@ -4,16 +4,22 @@
 Developed an end-to-end interactive Power BI dashboard to analyze Unified Payments Interface (UPI) transactions using a structured Excel dataset. The report highlights key transaction metrics, customer demographics, and payment behaviors to support data-driven financial decision-making.
 
 
+
 ## Screenshot
 
+### Web Page:
+
 ![gitfinal1](https://github.com/user-attachments/assets/951c49e1-db6b-4dc9-bf44-412b86855992)
+
+### Page 1:
 
 
 ![Page1](https://github.com/user-attachments/assets/e0cf7d25-7564-4cd0-a075-7c8cc6f19988)
 
+### Page 2:
+
 
 ![Page2](https://github.com/user-attachments/assets/a986efe9-887c-416c-82be-d09a8b646f6c)
-
 
 
 
