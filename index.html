@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI Transactions Power BI Dashboard</title>
+    <meta name="description" content="Comprehensive Power BI dashboard for analyzing UPI transaction patterns, trends, and digital payment insights.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'upi-blue': '#1e40af',
+                        'upi-orange': '#f97316',
+                        'upi-green': '#16a34a'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header with GitHub button -->
+    <header class="bg-white shadow-sm p-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="p-2 rounded-lg bg-white">
+                    <img src="assets/logo/upi-logo.png" alt="UPI Logo" class="h-10 w-auto">
+                </div>
+                <h1 class="text-2xl font-bold text-gray-800">UPI Transactions Dashboard</h1>
+            </div>
+            <a href="https://github.com/sakthi1729/UPI-Transaction-Dashboard-Power-BI" 
+               class="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors flex items-center space-x-2">
+                <i class="fab fa-github"></i>
+                <span>GitHub Project</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto p-6">
+        <!-- Report Screenshot -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Power BI Dashboard Preview</h2>
+            <div class="bg-gray-100 rounded-lg p-8 text-center">
+                <!-- Placeholder for screenshot - replace with actual image -->
+                <img src="assets/report-screenshots/overview.png"
+                     alt="UPI Transactions Power BI Dashboard Screenshot" 
+                     class="w-full h-auto rounded-lg shadow-md mx-auto"
+                     style="max-height: 600px; object-fit: contain;">
+                <!-- Alternative: If you don't have screenshot yet, use this placeholder -->
+                <!--
+                <div class="bg-gradient-to-br from-upi-blue to-upi-green text-white p-16 rounded-lg">
+                    <i class="fas fa-chart-line text-6xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">UPI Analytics Dashboard</h3>
+                    <p class="text-lg opacity-90">Interactive Power BI Report</p>
+                    <p class="text-sm opacity-75 mt-4">Screenshot will be displayed here</p>
+                </div>
+                -->
+            </div>
+        </div>
+
+        <!-- Download Buttons -->
+        <div class="bg-white rounded-xl shadow-lg p-8">
+            <h3 class="text-xl font-semibold text-gray-800 mb-6 text-center">Download Resources</h3>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <!-- Power BI Report Download -->
+                <a href="pbix/UPI_Report.pbix" 
+                   class="bg-upi-blue text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center space-x-3 text-lg">
+                    <i class="fas fa-download"></i>
+                    <span>Download Power BI Report</span>
+                </a>
+                
+                <!-- Dataset Download -->
+                <a href="data/UPI_Transactions.xlsx" 
+                   class="bg-upi-green text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-colors flex items-center justify-center space-x-3 text-lg">
+                    <i class="fas fa-file-excel"></i>
+                    <span>Download Dataset</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer with Profile Links -->
+    <footer class="mt-16 py-8 bg-white border-t">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-center space-x-6">
+                <!-- LinkedIn Profile -->
+                <a href="https://linkedin.com/in/sakthi-m-1a6268243" 
+                   class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition-colors">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                
+                <!-- GitHub Profile -->
+                <a href="https://github.com/sakthi1729" 
+                   class="bg-gray-800 text-white p-3 rounded-full hover:bg-gray-700 transition-colors">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+            </div>
+            <p class="text-center text-gray-600 mt-4 text-sm">
+                Built By Sakthi • Data Analyst
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-xl');
+            } else {
+                nav.classList.remove('shadow-xl');
+            }
+        });
+    </script>
+</body>
+</html>
